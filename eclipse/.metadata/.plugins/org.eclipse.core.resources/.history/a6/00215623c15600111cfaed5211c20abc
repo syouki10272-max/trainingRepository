@@ -1,0 +1,96 @@
+package pokemon;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class TypeCompatibility {
+	private Map<Type, Map<Type, Double>> typeChart = new HashMap<>();
+
+	public Map<Type, Map<Type, Double>> getTypeChart() {
+		return typeChart;
+	}
+
+	public void setTypeChart(Map<Type, Map<Type, Double>> typeChart) {
+		Type normal = new Type("ノーマル");
+		Type fire = new Type("ほのお");
+		Type water = new Type("みず");
+		Type electric = new Type("でんき");
+		Type grass = new Type("くさ");
+		Type ice = new Type("こおり");
+		Type fighting = new Type("かくとう");
+		Type poison = new Type("どく");
+		Type ground = new Type("じめん");
+		Type flying = new Type("ひこう");
+		Type psychic = new Type("エスパー");
+		Type bug = new Type("むし");
+		Type rock = new Type("いわ");
+		Type ghost = new Type("ゴースト");
+		Type dragon = new Type("ドラゴン");
+		Type dark = new Type("あく");
+		Type steel = new Type("はがね");
+		Type fairy = new Type("フェアリー");
+		Map<Type, Double> normalCompatibillity = new HashMap<>();
+		normalCompatibillity.put(normal, 1.0);
+		normalCompatibillity.put(fire, 1.0);
+		normalCompatibillity.put(water, 1.0);
+		normalCompatibillity.put(electric, 1.0);
+		normalCompatibillity.put(grass, 1.0);
+		normalCompatibillity.put(ice, 1.0);
+		normalCompatibillity.put(fighting, 1.0);
+		normalCompatibillity.put(poison, 1.0);
+		normalCompatibillity.put(ground, 1.0);
+		normalCompatibillity.put(flying, 1.0);
+		normalCompatibillity.put(psychic, 1.0);
+		normalCompatibillity.put(bug, 1.0);
+		normalCompatibillity.put(rock, 0.5);
+		normalCompatibillity.put(ghost, 0.0);
+		normalCompatibillity.put(dragon, 1.0);
+		normalCompatibillity.put(dark, 1.0);
+		normalCompatibillity.put(steel, 0.5);
+		normalCompatibillity.put(fairy, 1.0);
+		normalCompatibillity.put(null, 1.0);
+		typeChart.put(normal,normalCompatibillity);
+		Map<String, Double> fireCom = new HashMap<>();
+		fire.put("ノーマル", 1.0);
+		fire.put("ほのお", 0.5);
+		fire.put("みず", 0.5);
+		fire.put("でんき", 1.0);
+		fire.put("くさ", 2.0);
+		fire.put("こおり", 2.0);
+		fire.put("かくとう", 1.0);
+		fire.put("どく", 1.0);
+		fire.put("じめん", 1.0);
+		fire.put("ひこう", 1.0);
+		fire.put("エスパー", 1.0);
+		fire.put("むし", 2.0);
+		fire.put("いわ", 0.5);
+		fire.put("ゴースト", 1.0);
+		fire.put("ドラゴン", 0.5);
+		fire.put("あく", 1.0);
+		fire.put("はがね", 2.0);
+		fire.put("フェアリー", 1.0);
+		fire.put(null, 1.0);
+		typeChart.put("ほのお",fire);
+		Map<String, Double> water = new HashMap<>();
+		water.put("ノーマル", 1.0);
+		water.put("ほのお", 2.0);
+		water.put("みず", 0.5);
+		water.put("でんき", 1.0);
+		water.put("くさ", 0.5);
+		water.put("こおり", 1.0);
+		water.put("かくとう", 1.0);
+		water.put("どく", 1.0);
+		water.put("じめん", 2.0);
+		water.put("ひこう", 1.0);
+		water.put("エスパー", 1.0);
+		water.put("むし", 1.0);
+		water.put("いわ", 2.0);
+		water.put("ゴースト", 1.0);
+		water.put("ドラゴン", 0.5);
+		water.put("あく", 1.0);
+		water.put("はがね", 1.0);
+		water.put("フェアリー", 1.0);
+		water.put(null, 1.0);
+		typeChart.put("みず",water);
+	}
+}

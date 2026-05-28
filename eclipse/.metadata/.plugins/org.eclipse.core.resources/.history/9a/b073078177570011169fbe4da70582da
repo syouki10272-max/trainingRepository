@@ -1,0 +1,8 @@
+package pokemon;
+
+public class pokemonTest {
+	public static void main(String[] args) {
+		Pokemon attacker = new Pokemon();
+		Pokemon defender = new Pokemon();
+	}
+}

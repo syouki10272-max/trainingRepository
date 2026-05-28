@@ -1,0 +1,7 @@
+package pokemon;
+
+import java.util.Map;
+
+public class Type {
+	Map<String, Map<String, Double>> typeChart;
+}

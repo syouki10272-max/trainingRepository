@@ -1,0 +1,22 @@
+package pokemon;
+
+public class Move {
+	private int Power;
+	private Type type;
+
+	public int getPower() {
+		return Power;
+	}
+
+	public void setPower(int power) {
+		Power = power;
+	}
+
+	public String getType() {
+		return type.getType();
+	}
+
+	public void setType(Type type) {
+		this.type = type;
+	}
+}

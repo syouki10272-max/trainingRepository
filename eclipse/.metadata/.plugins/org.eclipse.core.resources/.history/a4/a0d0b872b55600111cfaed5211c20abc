@@ -1,0 +1,10 @@
+package pokemon;
+
+public class DamageCalculator {
+	public int execute(Pokemon attacker, Pokemon defender, Move move) {
+		double levelFactor = (attacker.getLevel() * 2 / 5.0) + 2;
+		double baceDamage = 2 + (levelFactor * move.getPower() * attacker.getAttack() / defender.getDefense()) / 50;
+		int damage = 0;
+		return damage;
+	}
+}

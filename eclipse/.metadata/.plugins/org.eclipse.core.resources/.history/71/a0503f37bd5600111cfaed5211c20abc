@@ -1,0 +1,90 @@
+package pokemon;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Type {
+	
+	private String type;
+	
+	private Map<String, Map<String, Double>> typeChart = new HashMap<>();
+
+	public Map<String, Map<String, Double>> getTypeChart() {
+		return typeChart;
+	}
+
+	public void setTypeChart(Map<String, Map<String, Double>> typeChart) {
+		Map<String, Double> normal = new HashMap<>();
+		normal.put("ノーマル", 1.0);
+		normal.put("ほのお", 1.0);
+		normal.put("みず", 1.0);
+		normal.put("でんき", 1.0);
+		normal.put("くさ", 1.0);
+		normal.put("こおり", 1.0);
+		normal.put("かくとう", 1.0);
+		normal.put("どく", 1.0);
+		normal.put("じめん", 1.0);
+		normal.put("ひこう", 1.0);
+		normal.put("エスパー", 1.0);
+		normal.put("むし", 1.0);
+		normal.put("いわ", 0.5);
+		normal.put("ゴースト", 0.0);
+		normal.put("ドラゴン", 1.0);
+		normal.put("あく", 1.0);
+		normal.put("はがね", 0.5);
+		normal.put("フェアリー", 1.0);
+		normal.put(null, 1.0);
+		typeChart.put("ノーマル",normal);
+		Map<String, Double> fire = new HashMap<>();
+		fire.put("ノーマル", 1.0);
+		fire.put("ほのお", 0.5);
+		fire.put("みず", 0.5);
+		fire.put("でんき", 1.0);
+		fire.put("くさ", 2.0);
+		fire.put("こおり", 2.0);
+		fire.put("かくとう", 1.0);
+		fire.put("どく", 1.0);
+		fire.put("じめん", 1.0);
+		fire.put("ひこう", 1.0);
+		fire.put("エスパー", 1.0);
+		fire.put("むし", 2.0);
+		fire.put("いわ", 0.5);
+		fire.put("ゴースト", 1.0);
+		fire.put("ドラゴン", 0.5);
+		fire.put("あく", 1.0);
+		fire.put("はがね", 2.0);
+		fire.put("フェアリー", 1.0);
+		fire.put(null, 1.0);
+		typeChart.put("ほのお",fire);
+		Map<String, Double> water = new HashMap<>();
+		water.put("ノーマル", 1.0);
+		water.put("ほのお", 2.0);
+		water.put("みず", 0.5);
+		water.put("でんき", 1.0);
+		water.put("くさ", 0.5);
+		water.put("こおり", 1.0);
+		water.put("かくとう", 1.0);
+		water.put("どく", 1.0);
+		water.put("じめん", 2.0);
+		water.put("ひこう", 1.0);
+		water.put("エスパー", 1.0);
+		water.put("むし", 1.0);
+		water.put("いわ", 2.0);
+		water.put("ゴースト", 1.0);
+		water.put("ドラゴン", 0.5);
+		water.put("あく", 1.0);
+		water.put("はがね", 1.0);
+		water.put("フェアリー", 1.0);
+		water.put(null, 1.0);
+		typeChart.put("みず",water);
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+	
+}

@@ -1,0 +1,9 @@
+package pokemon;
+
+public class DamageCalculator {
+	public int execute(Pokemon attacker, Pokemon defender, Move move) {
+		double levelFactor = (attacker.getLevel() * 2 / 5.0) + 2;
+		int damage = 0;
+		return damage;
+	}
+}

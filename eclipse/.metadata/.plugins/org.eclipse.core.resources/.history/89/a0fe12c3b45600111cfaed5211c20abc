@@ -1,0 +1,8 @@
+package pokemon;
+
+public class Pokemon {
+	private int level;
+	public int getLevel() {
+		return this.level;
+	}
+}

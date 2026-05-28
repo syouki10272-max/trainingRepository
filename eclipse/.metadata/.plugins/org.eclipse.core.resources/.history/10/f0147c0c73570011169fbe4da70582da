@@ -1,0 +1,7 @@
+package pokemon;
+
+public class pokemonTest {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,29 @@
+package pokemon;
+
+public class pokemonTest {
+	public static void main(String[] args) {
+		Pokemon attacker = new Pokemon();
+		Pokemon defender = new Pokemon();
+		Type fire = new Type("ほのお");
+		Type grass = new Type("くさ");
+		attacker.setAttack(100);
+		attacker.setType1(fire);
+		attacker.setType2(null);
+		attacker.setLevel(50);
+		attacker.setName("アタッカー");
+		defender.setName("ディフェンダー");
+		defender.setDefense(100);
+		defender.setLevel(50);
+		defender.setType1(grass);
+		defender.setType2(null);
+		Move move = new Move("かえんほうしゃ",90,fire);
+		TypeCompatibility typeCom = new TypeCompatibility();
+		typeCom.setTypeChart();
+		DamageCalculator dmgCalc = new DamageCalculator();
+		
+		int dmg = dmgCalc.execute(attacker, defender, move);
+		System.out.println(typeCom.getTypeChart().get(fire.getType()).get(fire.getType()));
+		System.out.println(attacker.getName() + "の、" + move.getName() + "！");
+		System.out.println(defender.getName() + "は、" + dmg + "のダメージ！");
+	}
+}

@@ -1,0 +1,13 @@
+package pokemon;
+
+public class Move {
+	private int Power;
+
+	public int getPower() {
+		return Power;
+	}
+
+	public void setPower(int power) {
+		Power = power;
+	}
+}
