@@ -7,44 +7,72 @@ public class Pokemon {
 	private int defense;
 	private Type type1;
 	private Type type2;
-	
+	private Caracteristics caracteristic;
+	private boolean isAttacking;
+
 	public Pokemon() {}
-	
-	public int getAttack() {
-		return attack;
-	}
-	public void setAttack(int attack) {
-		this.attack = attack;
-	}
-	public int getDefense() {
-		return defense;
-	}
-	public void setDefense(int defense) {
-		this.defense = defense;
-	}
-	public int getLevel() {
-		return level;
-	}
-	public void setLevel(int level) {
-		this.level = level;
-	}
-	public Type getType1() {
-		return type1;
-	}
-	public void setType1(Type type1) {
-		this.type1 = type1;
-	}
-	public Type getType2() {
-		return type2;
-	}
-	public void setType2(Type type2) {
-		this.type2 = type2;
-	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
+	public int getLevel() {
+		return level;
+	}
+
+	public void setLevel(int level) {
+		this.level = level;
+	}
+
+	public int getAttack() {
+		return attack;
+	}
+
+	public void setAttack(int attack) {
+		this.attack = attack;
+	}
+
+	public int getDefense() {
+		return defense;
+	}
+
+	public void setDefense(int defense) {
+		this.defense = defense;
+	}
+
+	public Type getType1() {
+		return type1;
+	}
+
+	public void setType1(Type type1) {
+		this.type1 = type1;
+	}
+
+	public Type getType2() {
+		return type2;
+	}
+
+	public void setType2(Type type2) {
+		this.type2 = type2;
+	}
+
+	public Caracteristics getCaracteristic() {
+		return caracteristic;
+	}
+
+	public void setCaracteristic(Caracteristics caracteristic) {
+		this.caracteristic = caracteristic;
+	}
+
+	public boolean isAttacking() {
+		return isAttacking;
+	}
+
+	public void setAttacking(boolean isAttacking) {
+		this.isAttacking = isAttacking;
+	}
 }

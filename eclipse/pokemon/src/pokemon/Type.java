@@ -16,18 +16,20 @@ public class Type {
 		this.type = type;
 	}
 	
-//	public boolean equals(Object o) {
-//		if(this == o) {
-//			return true;
-//		}
-//		if(o instanceof Type) {
-//			return false;
-//		}
-//		Type other = (Type) o;
-//		return java.util.Objects.equals(this.type, other.type);
-//	}
-//	
-//	public int hashCode() {
-//		return java.util.Objects.hash(type);
-//		}
+	@Override
+	public boolean equals(Object o) {
+		if(this == o) {
+			return true;
+		}
+		if(o instanceof Type) {
+			return false;
+		}
+		Type other = (Type) o;
+		return java.util.Objects.equals(this.type, other.type);
+	}
+	
+	@Override
+	public int hashCode() {
+		return java.util.Objects.hash(type);
+		}
 }
