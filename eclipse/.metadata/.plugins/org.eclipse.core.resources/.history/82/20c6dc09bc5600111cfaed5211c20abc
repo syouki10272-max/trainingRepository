@@ -1,9 +1,0 @@
-package pokemon;
-
-import java.util.HashMap;
-import java.util.Map;
-
-public class Type {
-	
-	Map<String, Map<String, Double>> typeChart = new HashMap<>();
-}

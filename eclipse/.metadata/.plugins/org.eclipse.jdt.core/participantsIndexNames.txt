@@ -1,5 +1,0 @@
-INDEX VERSION 1.134
-C:\pleiades\2025-12\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1896505647.index
-\PokemonCalc\src\main\java
-C:\pleiades\2025-12\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3353835006.index
-\PokemonCalc\src\main\java

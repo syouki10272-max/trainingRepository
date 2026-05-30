@@ -1,8 +1,0 @@
-package pokemon;
-
-public class DamageCalculator {
-	public int execute(Pokemon pokemon) {
-		int damage = 0;
-		return damage;
-	}
-}
